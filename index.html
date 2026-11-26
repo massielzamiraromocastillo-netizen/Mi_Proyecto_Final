@@ -12,7 +12,7 @@
 <body>
 
   <!-- ENCABEZADO Y MENU DE NAVEGACION -->
-  <header class="encabezado" id="inicio">
+  <header class="encabezado">
     <div class="contenedor barra-navegacion">
       <a href="#inicio" class="marca-logo" aria-label="Massiel Romo Essential Care">
   <img src="img/logo.jpg" alt="Logo Massiel Romo Essential Care" class="imagen-logo-original">
@@ -32,34 +32,35 @@
           <li class="item-submenu">
             <a href="#productos">Productos &#9662;</a>
             <ul class="submenu">
-              <li><a href="#productos">Ver todo el catalogo</a></li>
-              <li><a href="#productos">Corporal</a></li>
-              <li><a href="#productos">Facial</a></li>
-              <li><a href="#productos">Corporal y Facial</a></li>
-              <li><a href="#productos">Set de regalo</a></li>
-              <li><a href="#productos">Jaboneras</a></li>
-              <li><a href="#productos">Estropajabon</a></li>
-            </ul>
+              <li><a href="#productos" data-filtro="prod-todos">Ver todo el catálogo</a></li>
+              <li><a href="#productos" data-filtro="prod-corporal">Corporal</a></li>
+              <li><a href="#productos" data-filtro="prod-facial">Facial</a></li>
+              <li><a href="#productos" data-filtro="prod-ambos">Corporal y Facial</a></li>
+              <li><a href="#productos" data-filtro="prod-regalo">Set de regalo</a></li>
+              <li><a href="#productos" data-filtro="prod-jabonera">Jaboneras</a></li>
+              <li><a href="#productos" data-filtro="prod-estropajabon">Estropajabón</a></li>
+           </ul>
           </li>
 
           <li class="item-submenu">
             <a href="#ingredientes">Ingredientes &#9662;</a>
             <ul class="submenu">
-              <li><a href="#ingredientes">Aceites vegetales</a></li>
-              <li><a href="#ingredientes">Aceites esenciales</a></li>
-              <li><a href="#ingredientes">Mantecas y aditivos</a></li>
-            </ul>
+              <li><a href="#ingredientes" data-filtro="ing-vegetales">Aceites vegetales</a></li>
+              <li><a href="#ingredientes" data-filtro="ing-esenciales">Aceites esenciales</a></li>
+              <li><a href="#ingredientes" data-filtro="ing-mantecas">Mantecas y aditivos</a></li>
+           </ul>
           </li>
 
           <li class="item-submenu">
             <a href="#nosotros">Nosotros &#9662;</a>
             <ul class="submenu">
-              <li><a href="#nosotros">Nuestra historia</a></li>
-              <li><a href="#nosotros">Quienes somos</a></li>
-              <li><a href="#nosotros">Mision y Vision</a></li>
-              <li><a href="#nosotros">Nuestros valores</a></li>
+              <li><a href="#historia">Nuestra historia</a></li>
+              <li><a href="#quienes-somos">Quiénes somos</a></li>
+              <li><a href="#mision">Misión</a></li>
+              <li><a href="#vision">Visión</a></li>
+              <li><a href="#valores">Nuestros valores</a></li>
               <li><a href="#proceso">Proceso artesanal</a></li>
-            </ul>
+           </ul>
           </li>
 
           <li><a href="#promociones">Promociones</a></li>
@@ -71,7 +72,7 @@
   </header>
 
   <!-- PORTADA PRINCIPAL -->
-  <section class="portada">
+  <section class="portada" id="inicio">
     <div class="contenedor portada-grid">
       <div class="portada-texto">
         
@@ -541,7 +542,7 @@
       </div>
 
       <div class="grid-nosotros-superior">
-        <div class="bloque-historia">
+        <div id="historia" class="bloque-historia">
           <span class="etiqueta-suave">NUESTRA HISTORIA</span>
           <h3>&laquo;&lt;De un nuevo comienzo nacio una pasion: crear bienestar a traves de lo artesanal&raquo;&gt;</h3>
           <p>Massiel Romo Essential Care nacio en medio de uno de los momentos mas desafiantes e inesperados: la pandemia.</p>
@@ -562,7 +563,7 @@
         </div>
       </div>
 
-      <div class="tarjeta-quienes-somos">
+      <div id="quienes-somos" class="tarjeta-quienes-somos">
         <div class="foto-espacio-horizontal">
           <img src="img/quienessomos1.jpg" alt="Espacio para fotografia Quienes Somos">
                  </div>
@@ -577,30 +578,32 @@
       </div>
 
       <div class="grid-mision-vision">
-        <div class="tarjeta-mv">
-          <div class="foto-mini">
-            <img src="img/mision1.jpg" alt="Espacio para fotografia Mision">
-            
-          </div>
-          <h3>Nuestra Mision</h3>
-          <p>En Massiel Romo Essential Care tenemos como mision crear y ofrecer productos artesanales para el cuidado personal, elaborados con dedicacion, creatividad e ingredientes cuidadosamente seleccionados. Buscamos brindar alternativas que combinen las bondades de los ingredientes de origen natural, la riqueza de los aromas y el valor de los procesos artesanales, promoviendo experiencias de bienestar, cuidado y conexion con uno mismo.</p>
-          <p>Nos comprometemos con la calidad, la innovacion y la elaboracion responsable de cada producto, haciendo de cada creacion una expresion de nuestra pasion por el cuidado personal.</p>
-        </div>
 
-        <div class="tarjeta-mv">
-          <div class="foto-mini">
-            <img src="img/vision2.jpg" alt="Espacio para fotografia Vision">
-            
-          </div>
-          <h3>Nuestra Vision</h3>
-          <p>Consolidarnos como una marca colombiana reconocida por la calidad, creatividad y autenticidad de sus productos artesanales para el cuidado personal, logrando posicionarnos en el mercado nacional y expandirnos progresivamente a nuevos mercados.</p>
-          <p>Aspiramos a crecer e innovar constantemente, incorporando nuevas propuestas, ingredientes y alternativas de cuidado personal que respondan a las necesidades de nuestros clientes, sin perder nuestra esencia artesanal, el compromiso con la calidad y la dedicacion que caracteriza cada una de nuestras creaciones.</p>
-          <p>Queremos que Massiel Romo Essential Care sea sinonimo de confianza, bienestar y experiencias especiales de cuidado personal.</p>
-        </div>
-      </div>
+  <div id="mision" class="tarjeta-mv">
+    <div class="foto-mini">
+      <img src="img/mision1.jpg" alt="Nuestra misión">
+    </div>
+
+    <h3>Nuestra Misión</h3>
+    <p>En Massiel Romo Essential Care tenemos como misión crear y ofrecer productos artesanales para el cuidado personal, elaborados con dedicación, creatividad e ingredientes cuidadosamente seleccionados. Buscamos brindar alternativas que combinen las bondades de los ingredientes de origen natural, la riqueza de los aromas y el valor de los procesos artesanales, promoviendo experiencias de bienestar, cuidado y conexión con uno mismo.</p>
+    <p>Nos comprometemos con la calidad, la innovación y la elaboración responsable de cada producto, haciendo de cada creación una expresión de nuestra pasión por el cuidado personal.</p>
+  </div>
+
+  <div id="vision" class="tarjeta-mv">
+    <div class="foto-mini">
+      <img src="img/vision2.jpg" alt="Nuestra visión">
+    </div>
+
+    <h3>Nuestra Visión</h3>
+    <p>Consolidarnos como una marca colombiana reconocida por la calidad, creatividad y autenticidad de sus productos artesanales para el cuidado personal, logrando posicionarnos en el mercado nacional y expandirnos progresivamente a nuevos mercados.</p>
+    <p>Aspiramos a crecer e innovar constantemente, incorporando nuevas propuestas, ingredientes y alternativas de cuidado personal que respondan a las necesidades de nuestros clientes, sin perder nuestra esencia artesanal, el compromiso con la calidad y la dedicación que caracteriza cada una de nuestras creaciones.</p>
+    <p>Queremos que Massiel Romo Essential Care sea sinónimo de confianza, bienestar y experiencias especiales de cuidado personal.</p>
+  </div>
+
+</div>
 
       <!-- NUESTROS VALORES -->
-      <div class="bloque-valores">
+      <div id="valores" class="bloque-valores">
         <div class="encabezado-sub">
           <span class="etiqueta-suave">PRINCIPIOS QUE NOS GUIAN</span>
           <h3>Nuestros valores</h3>
@@ -754,193 +757,79 @@
     </div>
   </section>
 
-  <!-- CALCULADORA VISUAL  -->
- <!-- CALCULADORA VISUAL -->
-<section id="calculadora" class="seccion seccion-blanca">
-  <div class="contenedor">
-    <div class="encabezado-seccion">
-      <span class="etiqueta-seccion">COTIZADOR DE PEDIDOS</span>
-      <h2>Calculadora de tu compra</h2>
-      <p class="descripcion-seccion">
-        Selecciona los productos y cantidades de tu pedido. El código <strong>NAVIDAD10</strong> aplica un 10% de descuento exclusivamente a los 3 jabones de Promo Navideña.
-      </p>
-    </div>
+  <!-- CALCULADORA DE PEDIDOS: FORMULARIO HTML PROCESADO POR FLASK -->
+  <section id="calculadora" class="seccion seccion-blanca">
+    <div class="contenedor">
+      <div class="encabezado-seccion">
+        <span class="etiqueta-seccion">COTIZADOR DE PEDIDOS</span>
+        <h2>Calculadora de pedidos</h2>
+      </div>
 
-    <div class="calculadora-panel">
-      <form class="calculadora-form" action="#calculadora" method="get">
-
-        <div class="campo-grupo">
-          <label>Selecciona tus productos y cantidades</label>
+      <div class="calculadora-panel">
+        <form class="calculadora-form" action="/#calculadora" method="post">
+          <label>Selecciona productos y cantidades</label>
 
           <div class="lista-seleccion-productos">
-            <!-- Productos SIN descuento con código NAVIDAD10 -->
-            <div class="fila-producto">
-              <label class="check-producto">
-                <input type="checkbox" name="productos_sin_promo[]" value="45000">
-                <span>1. Jabón de Flor de Japón ($45.000)</span>
-              </label>
-              <input type="number" name="cantidades_sin_promo[]" min="1" placeholder="Cant." aria-label="Cantidad Jabón de Flor de Japón">
-            </div>
-
-            <div class="fila-producto">
-              <label class="check-producto">
-                <input type="checkbox" name="productos_sin_promo[]" value="45000">
-                <span>2. Jabón exfoliante de café, vainilla y canela ($45.000)</span>
-              </label>
-              <input type="number" name="cantidades_sin_promo[]" min="1" placeholder="Cant." aria-label="Cantidad Jabón exfoliante de café">
-            </div>
-
-            <div class="fila-producto">
-              <label class="check-producto">
-                <input type="checkbox" name="productos_sin_promo[]" value="45000">
-                <span>3. Jabón de carbón activado y arcilla blanca ($45.000)</span>
-              </label>
-              <input type="number" name="cantidades_sin_promo[]" min="1" placeholder="Cant." aria-label="Cantidad Jabón carbón activado">
-            </div>
-
-            <div class="fila-producto">
-              <label class="check-producto">
-                <input type="checkbox" name="productos_sin_promo[]" value="45000">
-                <span>4. Jabón de avena y lavanda ($45.000)</span>
-              </label>
-              <input type="number" name="cantidades_sin_promo[]" min="1" placeholder="Cant." aria-label="Cantidad Jabón de avena y lavanda">
-            </div>
-
-            <div class="fila-producto">
-              <label class="check-producto">
-                <input type="checkbox" name="productos_sin_promo[]" value="45000">
-                <span>5. Jabón de manzanilla y mandarina ($45.000)</span>
-              </label>
-              <input type="number" name="cantidades_sin_promo[]" min="1" placeholder="Cant." aria-label="Cantidad Jabón de manzanilla">
-            </div>
-
-            <div class="fila-producto">
-              <label class="check-producto">
-                <input type="checkbox" name="productos_sin_promo[]" value="45000">
-                <span>6. Jabón de Sandía y Pepino ($45.000)</span>
-              </label>
-              <input type="number" name="cantidades_sin_promo[]" min="1" placeholder="Cant." aria-label="Cantidad Jabón de Sandía">
-            </div>
-
-            <div class="fila-producto">
-              <label class="check-producto">
-                <input type="checkbox" name="productos_sin_promo[]" value="45000">
-                <span>7. Jabón de Maracuyá ($45.000)</span>
-              </label>
-              <input type="number" name="cantidades_sin_promo[]" min="1" placeholder="Cant." aria-label="Cantidad Jabón de Maracuyá">
-            </div>
-
-            <div class="fila-producto">
-              <label class="check-producto">
-                <input type="checkbox" name="productos_sin_promo[]" value="45000">
-                <span>8. Jabón de Mandarina ($45.000)</span>
-              </label>
-              <input type="number" name="cantidades_sin_promo[]" min="1" placeholder="Cant." aria-label="Cantidad Jabón de Mandarina">
-            </div>
-
-            <div class="fila-producto">
-              <label class="check-producto">
-                <input type="checkbox" name="productos_sin_promo[]" value="45000">
-                <span>9. Jabón de Té Verde y Mandarina ($45.000)</span>
-              </label>
-              <input type="number" name="cantidades_sin_promo[]" min="1" placeholder="Cant." aria-label="Cantidad Jabón de Té Verde">
-            </div>
-
-            <div class="fila-producto">
-              <label class="check-producto">
-                <input type="checkbox" name="productos_sin_promo[]" value="45000">
-                <span>10. Jabón de Naranja ($45.000)</span>
-              </label>
-              <input type="number" name="cantidades_sin_promo[]" min="1" placeholder="Cant." aria-label="Cantidad Jabón de Naranja">
-            </div>
-
-            <div class="fila-producto">
-              <label class="check-producto">
-                <input type="checkbox" name="productos_sin_promo[]" value="15000">
-                <span>11. Estropajabón Corporal ($15.000)</span>
-              </label>
-              <input type="number" name="cantidades_sin_promo[]" min="1" placeholder="Cant." aria-label="Cantidad Estropajabón">
-            </div>
-
-            <div class="fila-producto">
-              <label class="check-producto">
-                <input type="checkbox" name="productos_sin_promo[]" value="165000">
-                <span>12. Set de regalo 4 jabones artesanales ($165.000)</span>
-              </label>
-              <input type="number" name="cantidades_sin_promo[]" min="1" placeholder="Cant." aria-label="Cantidad Set de regalo">
-            </div>
-
-            <div class="fila-producto">
-              <label class="check-producto">
-                <input type="checkbox" name="productos_sin_promo[]" value="16000">
-                <span>13. Jabonera artesanal de madera ($16.000)</span>
-              </label>
-              <input type="number" name="cantidades_sin_promo[]" min="1" placeholder="Cant." aria-label="Cantidad Jabonera">
-            </div>
-
-            <!-- LOS ÚNICOS 3 PRODUCTOS ELEGIBLES PARA EL 10% CON CÓDIGO NAVIDAD10 -->
-            <div class="fila-producto">
-              <label class="check-producto">
-                <input type="checkbox" name="productos_promo_navidad[]" value="45000">
-                <span>Promo Navideña - Café, vainilla y canela ($45.000) <em>[Aplica NAVIDAD10]</em></span>
-              </label>
-              <input type="number" name="cantidades_promo_navidad[]" min="1" placeholder="Cant." aria-label="Cantidad Promo Café">
-            </div>
-
-            <div class="fila-producto">
-              <label class="check-producto">
-                <input type="checkbox" name="productos_promo_navidad[]" value="45000">
-                <span>Promo Navideña - Avena y lavanda ($45.000) <em>[Aplica NAVIDAD10]</em></span>
-              </label>
-              <input type="number" name="cantidades_promo_navidad[]" min="1" placeholder="Cant." aria-label="Cantidad Promo Avena">
-            </div>
-
-            <div class="fila-producto">
-              <label class="check-producto">
-                <input type="checkbox" name="productos_promo_navidad[]" value="45000">
-                <span>Promo Navideña - Flor de Japón ($45.000) <em>[Aplica NAVIDAD10]</em></span>
-              </label>
-              <input type="number" name="cantidades_promo_navidad[]" min="1" placeholder="Cant." aria-label="Cantidad Promo Flor de Japón">
-            </div>
+            {% for id, producto in catalogo.items() %}
+            <label class="fila-producto">
+              <input class="selector-producto" type="checkbox" name="productos"
+                     value="{{ id }}" {% if id in seleccionados %}checked{% endif %}>
+              <span>
+                {{ producto.nombre }} ({{ pesos(producto.precio) }})
+                {% if producto.navidad %}<small>10% con NAVIDAD10</small>{% endif %}
+              </span>
+              <input class="cantidad-producto" type="number" min="1"
+                     name="cantidad_{{ id }}"
+                     value="{{ cantidades.get(id, '') }}" placeholder="Cant.">
+            </label>
+            {% endfor %}
           </div>
-        </div>
 
-        <div class="campo-grupo">
-          <label for="calc-codigo">Código de descuento</label>
-          <input type="text" id="calc-codigo" name="codigo" placeholder="Ej: NAVIDAD10">
-        </div>
+          <label for="codigo-descuento">Código de descuento</label>
+          <input type="text" id="codigo-descuento" name="codigo"
+                 value="{{ codigo }}" placeholder="Ej: NAVIDAD10">
 
-        <button type="submit" class="boton boton-oliva boton-completo">Calcular pedido</button>
-      </form>
+          {% if mensaje %}
+          <p class="mensaje-calculadora {{ tipo_mensaje }}">{{ mensaje }}</p>
+          {% endif %}
 
-      <aside class="calculadora-resultado" aria-live="polite">
-        <span class="etiqueta-suave">RESUMEN VISUAL</span>
-        <h3>Detalle de cotización</h3>
-        <div class="linea-resumen">
-          <span>Productos seleccionados:</span>
-          <strong>Pendiente por seleccionar</strong>
-        </div>
-        <div class="linea-resumen">
-          <span>Cantidad total:</span>
-          <strong>0 unidades</strong>
-        </div>
-        <div class="linea-resumen">
-          <span>Subtotal:</span>
-          <strong>$0</strong>
-        </div>
-        <div class="linea-resumen">
-          <span>Descuento NAVIDAD10 (10%):</span>
-          <strong>$0</strong>
-        </div>
-        <div class="total-caja">
-          <span>Valor total estimado</span>
-          <strong class="monto-total">$0</strong>
-        </div>
-        <p class="nota-etapa">Espacio reservado para mostrar el resultado. El cálculo de los productos y el código NAVIDAD10 se incorporarán en Python.</p>
-      </aside>
+          <button type="submit" class="boton boton-oliva boton-completo">
+            Calcular pedido
+          </button>
+          <button type="submit" class="boton-limpiar"
+               name="accion" value="limpiar" formnovalidate>
+               Limpiar pedido
+          </button>
+        </form>
+
+        <aside class="calculadora-resultado">
+          <span class="etiqueta-suave">RESUMEN VISUAL</span>
+          <h3>Detalle de cotización</h3>
+
+          <div class="linea-resumen">
+            <span>Productos seleccionados:</span>
+            <strong>{{ resultado.productos if resultado else "Pendiente por seleccionar" }}</strong>
+          </div>
+          <div class="linea-resumen">
+            <span>Cantidad total:</span>
+            <strong>{{ resultado.unidades if resultado else 0 }} unidades</strong>
+          </div>
+          <div class="linea-resumen">
+            <span>Subtotal:</span>
+            <strong>{{ resultado.subtotal if resultado else pesos(0) }}</strong>
+          </div>
+          <div class="linea-resumen">
+            <span>Descuento aplicado:</span>
+            <strong>{{ resultado.descuento if resultado else pesos(0) }}</strong>
+          </div>
+          <div class="total-caja">
+            <span>Valor total estimado</span>
+            <strong class="monto-total">{{ resultado.total if resultado else pesos(0) }}</strong>
+          </div>
+        </aside>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- CONTACTO Y PQRS -->
   <section id="contacto" class="seccion seccion-gris">
@@ -1043,7 +932,8 @@
         <div class="pie-marca">
           <span class="nombre-caligrafico pie-logo-texto">Massiel Romo</span>
           <span class="subtitulo-marca">&bull; ESSENTIAL CARE &bull;</span>
-          <p>Amor por lo natural, pasion por el cuidado. Jabones artesanales en Barranquilla, Colombia.</p>
+          <p>Amor por lo natural, pasión por el cuidado.<br>
+          Jabones artesanales.</p>
         </div>
 
         <div class="pie-enlaces">
@@ -1072,14 +962,12 @@
         <p>&copy; 2026 Massiel Romo Essential Care. Todos los derechos reservados.</p>
         <p>Barranquilla, Colombia &mdash; La Puerta de Oro de Colombia</p>
       </div>
+      <small class="credito-ia">
+         Sitio web elaborado con apoyo de herramientas de inteligencia artificial y revisado por su autora.
+        </small>
     </div>
   </footer>
 
 </body>
 </html>
-
-
-
-
-
 
